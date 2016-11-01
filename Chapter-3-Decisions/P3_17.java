@@ -4,8 +4,7 @@
  */
 import java.util.Scanner;
 
-public class övning6 {
-
+public class P3_17 {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 
