@@ -9,7 +9,7 @@
  
 import java.util.Scanner;
  
-public class Övning2B {
+public class P4_2B {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		int oddNumbers = 0;
