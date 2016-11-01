@@ -9,7 +9,7 @@
 
 import java.util.Scanner;
 
-public class övning3 {
+public class P3_7 {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		
