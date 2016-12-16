@@ -12,8 +12,8 @@ import java.util.Scanner;
 
 public class P2_13 {
 	public static void main(String[] args) {
-		Scanner input = new Scanner(System.in);
-		System.out.print("Type a integer between 1,000 - 999,999, comma included: ");
+	Scanner input = new Scanner(System.in);
+	System.out.print("Type a integer between 1,000 - 999,999, comma included: ");
         String integer = input.nextLine();
         input.close();
 		
