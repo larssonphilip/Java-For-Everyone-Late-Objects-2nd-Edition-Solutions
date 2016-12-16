@@ -12,13 +12,13 @@ import java.util.Scanner;
 
 public class P2_13 {
 	public static void main(String[] args) {
-	Scanner input = new Scanner(System.in);
-	System.out.print("Type a integer between 1,000 - 999,999, comma included: ");
-        String integer = input.nextLine();
-        input.close();
+		Scanner input = new Scanner(System.in);
+		System.out.print("Type a integer between 1,000 - 999,999, comma included: ");
+        	String integer = input.nextLine();
+        	input.close();
 		
-        String beforeComma = integer.substring(0, integer.length() - 4);
-        String afterComma = integer.substring(integer.length() - 3);
-        System.out.println(beforeComma + afterComma);
+        	String beforeComma = integer.substring(0, integer.length() - 4);
+        	String afterComma = integer.substring(integer.length() - 3);
+        	System.out.println(beforeComma + afterComma);
 	}
 }
