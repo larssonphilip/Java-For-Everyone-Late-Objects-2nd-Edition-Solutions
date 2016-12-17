@@ -28,7 +28,7 @@ public class P2_17 {
 		int secondTimeInMinutes = secondTime / 100 * minutesInOneHour + secondTime % 100;
 		input.close();
 	
-		int minutes = secondTimeInMinutes - firstTimeInMinutes; //Skillnaden i minuter
+		int minutes = secondTimeInMinutes - firstTimeInMinutes;
 		minutes = ((minutesInOneDay + minutes) % minutesInOneDay);
 		int hours = minutes / 60;
 		minutes %= 60;
