@@ -11,6 +11,8 @@ public class P3_2 {
 		Scanner input = new Scanner(System.in);
 		System.out.print("Type a floating-point number: ");
 		float number = input.nextFloat();
+		input.close();
+		
 		if(number == 0) {
 			System.out.println("Zero");
 		}
@@ -31,6 +33,6 @@ public class P3_2 {
 			}
 		}
 		
-		input.close();
+		
 	}
 }
