@@ -22,9 +22,7 @@ public class P5_6 {
 		String vowels = "aouåeiyäö";
 		for(int i = 0; i < str.length(); i++) {
 			char currentChar = Character.toLowerCase(str.charAt(i));
-			if(vowels.contains(Character.toString(currentChar))) {
-				vowelsCounter++;
-			}
+			if(vowels.contains(Character.toString(currentChar))) vowelsCounter++;
 		}
 		return vowelsCounter;
 	}
