@@ -19,14 +19,7 @@ public class P5_4 {
 	}
 
 	public static String middle(String str) {
-		String output = "";
-		int strMiddle = str.length() / 2;
-		if(str.length() % 2 == 0) {
-			output = str.substring(strMiddle - 1, strMiddle + 1);
-		}
-		else {
-			output = str.substring(strMiddle, strMiddle + 1);
-		}
-		return output;
+		int middle = str.length() / 2;
+		return (str.length() % 2 == 0) ? str.substring(middle - 1, middle + 1) : str.substring(middle, middle + 1);
 	}
 }
