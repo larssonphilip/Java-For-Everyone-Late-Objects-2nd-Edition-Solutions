@@ -25,7 +25,6 @@ public class P4_6 {
 			first = false;
 		}
 
-
 		input.close();
 		System.out.println("The minimum value is: " + minimumValue);
 	}
