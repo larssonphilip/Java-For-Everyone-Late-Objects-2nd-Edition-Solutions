@@ -17,16 +17,11 @@ public class P4_2D {
 		int number = 0;
 		int previousNumber = number;
 
-		int i = 0;
-
-		while (i != 10) {
+		for(int i = 0; i < 10; i++) {
 			System.out.print("Type a number (" + (i+1) + "/10): ");
 			number = input.nextInt();
-			if(number == previousNumber) {
-				adjacentDuplicates += String.format("%s ", number);
-			}
+			if (number == previousNumber) adjacentDuplicates += String.format("%s ", number);
 			previousNumber = number;
-			i++;
 		}
     
 		input.close();
