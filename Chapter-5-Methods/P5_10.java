@@ -11,20 +11,15 @@ import java.util.Scanner;
 
 public class P5_10 {
 	public static void main(String[] args){
-		Scanner input = new Scanner(System.in);
-		double floatingPointNumber = readDouble(input, "Please enter a floating-point number:");
-
+		double floatingPointNumber = readDouble("Please enter a floating-point number:");
 		System.out.printf("The floating-point number is: %.2f", floatingPointNumber);
-		input.close();
 	}
 
-	public static double readDouble(Scanner scan, String prompt){
+	public static double readDouble(String prompt){
+		Scanner input = new Scanner(System.in);
 		System.out.print(prompt + " ");
-    
-		while(!scan.hasNextDouble()) {
-			scan.nextLine();
-		}
-		double value = scan.nextDouble();
-		return value;
+
+		while(!input.hasNextDouble()) input.nextLine();
+		return input.nextDouble();
 	}
 }
