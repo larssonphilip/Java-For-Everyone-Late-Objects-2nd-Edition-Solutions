@@ -7,27 +7,22 @@
 import java.util.Scanner;
 
 public class P5_7 {
-	public static void main(String[] args) {
+		public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		System.out.print("Type a sentence: ");
 		String userInput = input.nextLine();
 		input.close();
 
-		System.out.println("There's " + countWords(userInput) + " words in that sentence.");
-		System.exit(0);
+		System.out.printf("That sentence contains of %d words.", countWords(userInput));
 	}
 
 	public static int countWords(String str) {
 		int wordCounter = 0;
 		str = str.trim();
-    
+
 		if(!str.isEmpty()) {
 			wordCounter++;
-			for(int i = 0; i < str.length(); i++) {
-				if(str.charAt(i) == ' ') {
-					wordCounter++;
-				}	
-			}
+			for(int i = 0; i < str.length(); i++) if(str.charAt(i) == ' ') wordCounter++;
 		}
 		return wordCounter;
 	}
