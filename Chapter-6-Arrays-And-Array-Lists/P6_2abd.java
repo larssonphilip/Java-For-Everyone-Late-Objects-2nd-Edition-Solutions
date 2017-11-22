@@ -12,24 +12,20 @@ public class P6_2abd {
 		int swapArr[] = {1, 2, 3, 4, 5, 6, 7};
 		swapElements(swapArr, 0, swapArr.length - 1);
 		System.out.print("A: ");
-		for(int i = 0; i < swapArr.length; i++) {
-			System.out.print(swapArr[i] + "  ");
-		}
+		for(int i = 0; i < swapArr.length; i++) System.out.print(swapArr[i] + "  ");
 		System.out.println();
 
 		int shiftArr[] = {1, 2, 3, 4, 5, 6, 7};
 		shiftElements(shiftArr);
 		System.out.print("\nB: ");
-		for(int i = 0; i < shiftArr.length; i++) {
-			System.out.print(shiftArr[i] + "  ");
-		}
+		for(int i = 0; i < shiftArr.length; i++) System.out.print(shiftArr[i] + "  ");
 		System.out.println();
 
 		int replaceArr[] = {1, 2, 3, 4, 5, 6, 7};
 		System.out.print("\nD: ");
 		replaceElements(replaceArr);
 	}
-  
+
 	public static void swapElements(int[] array, int indexA, int indexB) {
 		int temp = array[indexA];
 		array[indexA] = array[indexB];
@@ -48,16 +44,12 @@ public class P6_2abd {
 		newArray[newArray.length - 1] = array[array.length - 1];
 
 		for(int i = 1; i < array.length - 1; i++) {
-			if(array[i + 1] > array[i - 1]) {
-				newArray[i] = array[i + 1];
-			} else if(array[i - 1] > array[i + 1]) {
-				newArray[i] = array[i - 1];
-			}
+			if(array[i + 1] > array[i - 1]) newArray[i] = array[i + 1];
+			else if(array[i - 1] > array[i + 1]) newArray[i] = array[i - 1];
 		}
 
-		for(int i = 0; i < newArray.length; i++) {
-			System.out.print(newArray[i] + "  ");
-		}
+		for(int i = 0; i < newArray.length; i++) System.out.print(newArray[i] + "  ");
+		
 		return array;
 	}
 }
