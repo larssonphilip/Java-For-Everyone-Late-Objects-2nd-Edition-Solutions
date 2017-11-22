@@ -18,11 +18,8 @@ public class P4_1D {
 		input.close();
 
 		int oddSum = 0;
-		for(int i = firstNumber; i <= secondNumber; i++) {
-			if(i % 2 == 1) {
-				oddSum += i;
-			}
-		}
-		System.out.println("The sum of the odd numbers between " + firstNumber + " and " + secondNumber + ": " + oddSum);
+		
+		for(int i = firstNumber; i <= secondNumber; i++) oddSum = ((i % 2) == 1) ? oddSum+i : oddSum;
+		System.out.printf("The sum of the odd numbers between %d and %d: %d ", firstNumber, secondNumber, oddSum);
 	}
 }
