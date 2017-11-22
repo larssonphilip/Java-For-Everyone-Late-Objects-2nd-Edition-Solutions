@@ -18,16 +18,10 @@ public class P4_2B {
 		for(int i = 0; i != 10; i++) {
 			System.out.print("Number (" + (i+1) + "/10): ");
 			int inputNumber = input.nextInt();
-			if((inputNumber % 2) == 0) {
-				evenNumbers += 1;
-			}
-			else {
-				oddNumbers += 1;
-			}
+			if((inputNumber % 2) == 0) evenNumbers++; else oddNumbers++;
 		}
 		input.close();
-
-		System.out.println("Even numbers: " + evenNumbers);
-		System.out.println("Odd numbers: " + oddNumbers);
+		
+		System.out.printf("Even numbers %d" + "%nOdd numbers: %d", evenNumbers, oddNumbers);
 	}
 }
