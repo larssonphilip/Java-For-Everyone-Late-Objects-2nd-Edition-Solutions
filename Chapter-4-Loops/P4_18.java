@@ -23,16 +23,10 @@ public class P4_18 {
 		input.close();
 
 		boolean isPrimeNumber = true;
-		for (int i = 2; i <= maxNumber; i++) {
+		for(int i = 2; i <= maxNumber; i++) {
 			int currentNumber = i;
-			for (int j = 2; j < currentNumber; j++) {
-				if (currentNumber % j == 0) {
-					isPrimeNumber = false;
-				}
-			}
-			if (isPrimeNumber == true) {
-				System.out.println(currentNumber);
-			}
+			for(int j = 2; j < currentNumber; j++) if(currentNumber % j == 0) isPrimeNumber = false;
+			if(isPrimeNumber == true) System.out.println(currentNumber);
 
 			isPrimeNumber = true;
 		}
