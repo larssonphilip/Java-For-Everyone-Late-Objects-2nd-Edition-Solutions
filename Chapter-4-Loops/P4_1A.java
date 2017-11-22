@@ -10,9 +10,9 @@
 public class P4_1A {
 	public static void main(String[] args) {
 		int evenSum = 0;
-		for(int i = 0; i <= 100; i+=2) {
-			evenSum += i;
-		}
+		
+		for(int i = 0; i <= 100; i+=2) evenSum += i;
+		
 		System.out.println("The sum of all even numbers between 2 and 100: " + evenSum);
 	}
 }
