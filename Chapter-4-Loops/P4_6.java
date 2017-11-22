@@ -21,14 +21,10 @@ public class P4_6 {
 		System.out.println("Type a sequence of numbers (Type any letter to stop the program): ");
 		while(input.hasNextInt()) {
 			int userInput = input.nextInt();
-			if(first == true) {
-				minimumValue = userInput;
-				first = false;
-			}
-			else if (userInput < minimumValue) {
-				minimumValue = userInput;
-			}
+			minimumValue = (first) ? userInput : (userInput < minimumValue) ? userInput : minimumValue;
+			first = false;
 		}
+
 
 		input.close();
 		System.out.println("The minimum value is: " + minimumValue);
