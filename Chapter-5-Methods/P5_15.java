@@ -12,18 +12,12 @@ import java.util.Scanner;
 public class P5_15 {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
-
 		System.out.print("Type the word you want to reverse: ");
-		String userInput = input.next();
+		System.out.println("Your word reversed is: " + reverse(input.next()));
 		input.close();
-
-		System.out.println("Your word reversed is: " + reverse(userInput));
 	}
 
 	public static String reverse(String str) {
-		if(str.length() > 1) {
-			return reverse(str.substring(1)) + str.charAt(0);
-		}
-		return str;
+		return (str.length() > 1) ? reverse(str.substring(1)) + str.charAt(0) : str;
 	}
 }
