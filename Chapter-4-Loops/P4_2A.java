@@ -12,24 +12,17 @@ import java.util.Scanner;
 public class P4_2A {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
-		System.out.print("Type a number (1/10): ");
 
+		System.out.print("Type a number " + "(1/10): ");
 		int inputNumber = input.nextInt();
 		int smallestNumber = inputNumber;
 		int largestNumber = inputNumber;
 
-		int i = 1;
-		while(i != 10) {
+		for(int i = 1; i < 10; i++) {
 			System.out.print("Type another number (" + (i+1) + ("/10): "));
 			inputNumber = input.nextInt();
-
-			if(inputNumber < smallestNumber) {
-				smallestNumber = inputNumber;
-			}
-			else if(inputNumber > largestNumber) {
-				largestNumber = inputNumber;
-			}
-			i++;
+			smallestNumber = (smallestNumber > inputNumber) ? inputNumber : smallestNumber;
+			largestNumber = (largestNumber < inputNumber) ? inputNumber : largestNumber;
 		}
 
 		System.out.println("Smallest number: " + smallestNumber);
