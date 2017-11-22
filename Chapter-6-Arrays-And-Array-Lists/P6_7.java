@@ -10,9 +10,7 @@ public class P6_7 {
 	public static void main(String[] args) {
 		int[] numberArr = {1, 4, 9, 16, 9, 7, 4, 9, 11};
 		System.out.println("Array: ");
-		for(int i = 0; i < numberArr.length; i++) {
-			System.out.print(numberArr[i] + "  ");
-		}
+		for(int i = 0; i < numberArr.length; i++) System.out.print(numberArr[i] + "  ");
 		reverseSequence(numberArr);
 	}
 
@@ -25,8 +23,6 @@ public class P6_7 {
 		}
 		
 		System.out.println("\n\nReversed array: ");
-		for(int i = 0; i < inArray.length; i++) {
-			System.out.print(inArray[i] + "  ");
-		}
+		for(int i = 0; i < inArray.length; i++) System.out.print(inArray[i] + "  ");
 	}
 }
