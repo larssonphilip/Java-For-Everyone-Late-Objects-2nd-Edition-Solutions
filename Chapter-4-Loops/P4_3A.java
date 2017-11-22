@@ -17,9 +17,7 @@ public class P4_3A {
 
 		for(int i = 0; i < userInput.length(); i++) {
 			char currentLetter = userInput.charAt(i);
-			if(Character.isUpperCase(currentLetter)) {
-				uppercaseOutput += currentLetter;
-			}
+			if(Character.isUpperCase(currentLetter)) uppercaseOutput += currentLetter;
 		}
 		System.out.println(uppercaseOutput);
 	}
