@@ -21,12 +21,11 @@ public class P4_2A {
 		for(int i = 1; i < 10; i++) {
 			System.out.print("Type another number (" + (i+1) + ("/10): "));
 			inputNumber = input.nextInt();
-			smallestNumber = (smallestNumber > inputNumber) ? inputNumber : smallestNumber;
-			largestNumber = (largestNumber < inputNumber) ? inputNumber : largestNumber;
+			if(smallestNumber > inputNumber) smallestNumber = inputNumber; 
+			else if(largestNumber < inputNumber) largestNumber = inputNumber;
 		}
 
-		System.out.println("Smallest number: " + smallestNumber);
-		System.out.println("Largest number: " + largestNumber);
+		System.out.printf("Smallest number: %d %nLargest number: %d", smallestNumber, largestNumber);
 
 		input.close();
 	}
